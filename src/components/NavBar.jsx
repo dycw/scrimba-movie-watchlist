@@ -1,3 +1,5 @@
+// @flow
+
 export default function NavBar(props) {
   const { titleText, buttonText, setPage, targetPage } = props;
   return (
