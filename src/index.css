@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* My stuff */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 550px;
+  height: 780px;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 80px 42px;
+}
+
+nav > h1 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+nav > button {
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+}

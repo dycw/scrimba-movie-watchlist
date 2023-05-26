@@ -1,23 +1,15 @@
 import "./App.css";
-import logo from "./logo.svg";
+import Search from "./components/Search";
+import WatchList from "./components/WatchList";
+import { AllPages } from "./enums";
+import { useState } from "react";
 
 export default function App() {
+  const [page, setPage] = useState(AllPages.WatchList);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {page === AllPages.Search && <Search setPage={setPage} />}
+      {page === AllPages.WatchList && <WatchList setPage={setPage} />}
     </div>
   );
 }
